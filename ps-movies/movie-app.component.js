@@ -9,9 +9,9 @@
     module.component("movieApp", {
         templateUrl: "ps-movies/movie-app.component.html",
         $routeConfig: [
-            { path: "#/list", component: "movieList", name: "List" },
-            { path: "#/about", component: "appAbout", name: "About" },
-            { path: "#/**", redirectTo: ["List"] }
+            { path: "/list", component: "movieList", name: "List" },
+            { path: "/about", component: "appAbout", name: "About" },
+            { path: "/**", redirectTo: ["List"] }
 
         ]
     })

@@ -34,7 +34,7 @@
 	}
 
 	module.component("movieList", {
-		templateUrl: "/ps-movies/movie-list.component.html",
+		templateUrl: "ps-movies/movie-list.component.html",
 		controllerAs: "model",
 		controller: ["$http", controller]
 	});

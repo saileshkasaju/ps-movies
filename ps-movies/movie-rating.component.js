@@ -11,7 +11,7 @@
 		transclude: true,
 		controllerAs: "model",
 		controller: function() {
-			var model = this,
+			var model = this;
 
 			model.$onInit = function() {
 				model.entries = new Array(model.value);

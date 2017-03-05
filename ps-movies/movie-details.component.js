@@ -7,7 +7,7 @@
     var module = angular.module("psMovies");
 
     module.component("movieDetails", {
-        templateUrl: "/ps-movies/movie-details.component.html",
+        templateUrl: "ps-movies/movie-details.component.html",
         // $canActivate: function($timeout) {
         //   return $timeout(function() {
         //       return true;

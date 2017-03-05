@@ -3,8 +3,8 @@
 
     var module = angular.module("psMovies", ["ngRoute"]);
 
-    module.config(function ( $routeProvider) {
-    	// $locationProvider.html5Mode(true);
+    module.config(function ($routeProvider, $locationProvider) {
+    	$locationProvider.html5Mode(true);
     	$routeProvider
             .when("/list", { template: "<movie-list></movie-list>"})
             .when("/about", { template: "<app-about></app-about>"})

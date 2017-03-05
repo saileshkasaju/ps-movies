@@ -1,9 +1,17 @@
 (function() {
     "use strict";
 
-    angular.module("psMovies", []);
+    var module = angular.module("psMovies", ["ngRoute"]);
 
-    angular.module("psMovies").config(function ($locationProvider) {
+    module.config(function ($routeProvider, $locationProvider) {
     	$locationProvider.html5Mode(true);
+    	$routeProvider
+            .when("/list", { template: "<movie-list></movie-list>"})
+            .when("/about", { template: "<app-about></app-about>"})
+            .otherwise({ redirectTo: "/list" });
+    });
+
+    module.component("appAbout", {
+        template: "This is the about page"
     });
 }());

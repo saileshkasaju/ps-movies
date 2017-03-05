@@ -42,7 +42,7 @@
         controllerAs: "model",
         controller: ["$http", controller],
         bindings: {
-            "$router": "c"
+            "$router": "<"
         }
     });
 }());

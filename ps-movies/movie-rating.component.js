@@ -8,6 +8,7 @@
 		bindings: {
 			value: "<"
 		},
+		transclude: true,
 		controllerAs: "model",
 		controller: function() {
 			var model = this,

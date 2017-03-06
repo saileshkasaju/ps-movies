@@ -6,19 +6,19 @@
 	module.component("movieRating", {
 		templateUrl: "ps-movies/movie-rating.component.html",
 		bindings: {
-			value: "<"
+			value: "<",
+			max: "<"
 		},
-		transclude: true,
 		controllerAs: "model",
 		controller: function() {
 			var model = this;
 
 			model.$onInit = function() {
-				model.entries = new Array(model.value);
+				model.entries = new Array(model.max);
 			};
 
 			model.$onChanges = function() {
-				model.entries = new Array(model.value);	
+				model.entries = new Array(model.max);
 			};
 		}
 	});

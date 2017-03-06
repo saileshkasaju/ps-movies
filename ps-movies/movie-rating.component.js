@@ -3,6 +3,15 @@
 
 	var module = angular.module("psMovies");
 
+	function buildEntries(value, max) {
+	    var entries = [];
+
+	    for(var i = 1; i <= max; i++) {
+	        var icon = i <= value ? "glyphicon-star" : "glyphicon-empty"
+            entries.push(icon);
+        }
+        return entries;
+    }
 	module.component("movieRating", {
 		templateUrl: "ps-movies/movie-rating.component.html",
 		bindings: {
@@ -14,11 +23,11 @@
 			var model = this;
 
 			model.$onInit = function() {
-				model.entries = new Array(model.max);
+				model.entries = new buildEntries(model.value, model.max);
 			};
 
 			model.$onChanges = function() {
-				model.entries = new Array(model.max);
+                model.entries = new buildEntries(model.value, model.max);
 			};
 		}
 	});

@@ -7,7 +7,7 @@
 	    var entries = [];
 
 	    for(var i = 1; i <= max; i++) {
-	        var icon = i <= value ? "glyphicon-star" : "glyphicon-empty"
+	        var icon = i <= value ? "glyphicon-star" : "glyphicon-star-empty"
             entries.push(icon);
         }
         return entries;

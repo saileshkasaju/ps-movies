@@ -20,6 +20,10 @@
             });
         };
 
+        model.setRating = function(movie, newRating) {
+            movie.rating = newRating;
+        };
+
         model.goTo = function(id) {
             model.$router.navigate(["Details", {id: id}, "Overview"]);
         };

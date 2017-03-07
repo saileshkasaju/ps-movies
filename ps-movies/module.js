@@ -1,7 +1,7 @@
 (function() {
     "use strict";
 
-    var module = angular.module("psMovies", ["ngComponentRouter"]);
+    var module = angular.module("psMovies", ["ngComponentRouter", "ngAnimate"]);
 
     module.config(function ($locationProvider) {
     	$locationProvider.html5Mode(true);

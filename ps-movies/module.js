@@ -4,7 +4,7 @@
     var module = angular.module("psMovies", ["ngComponentRouter"]);
 
     module.config(function ($locationProvider) {
-    	$locationProvider.html5Mode(false);
+    	$locationProvider.html5Mode(true);
     });
 
     module.value("$routerRootComponent", "movieApp");
